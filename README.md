@@ -6,6 +6,11 @@ Live site: https://puredalek.github.io/creator-landing-page-snapshot/
 
 Free scorecard: https://puredalek.github.io/creator-landing-page-snapshot/scorecard.html
 
+Free generators:
+
+- Creator page headline generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html
+- Creator page CTA generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html
+
 Focused audit pages:
 
 - Newsletter landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/newsletter-landing-page-audit.html
