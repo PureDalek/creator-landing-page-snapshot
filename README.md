@@ -22,6 +22,12 @@ Focused audit pages:
 - Course sales page audit: https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-audit.html
 - Template seller landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html
 
+Sample reports:
+
+- General sample snapshot: https://puredalek.github.io/creator-landing-page-snapshot/sample_snapshot.html
+- Course sales page sample snapshot: https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-sample-snapshot.html
+- Template product page sample snapshot: https://puredalek.github.io/creator-landing-page-snapshot/template-product-page-sample-snapshot.html
+
 Checkout: https://puredalek.gumroad.com/l/creator-landing-page-snapshot
 
 The snapshot is for newsletter writers, coaches, course sellers, template sellers, and indie creators who want a clearer offer page before sending more traffic.
