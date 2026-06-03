@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Substack Newsletter Page Audit</title>
+  <meta name="description" content="A focused Substack newsletter page audit for creators who want a clearer subscribe promise, sharper CTA, stronger proof, and a better path from reader to paid subscriber or buyer.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/substack-newsletter-page-audit.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Substack Newsletter Page Audit">
+  <meta property="og:description" content="A practical audit for Substack publication pages: reader promise, subscribe CTA, proof, paid-upgrade path, and next copy edits.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/substack-newsletter-page-audit.html">
+  <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover_42.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Substack Newsletter Page Audit",
+      "description": "A focused audit for Substack newsletter pages with an offer clarity score, headline rewrite, CTA fixes, content hooks, and conversion copy suggestions.",
+      "serviceType": "Substack newsletter page audit",
+      "areaServed": "Worldwide",
+      "url": "https://puredalek.github.io/creator-landing-page-snapshot/substack-newsletter-page-audit.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "42",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.58;
+    }
+    .wrap {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    nav {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+    nav a {
+      color: var(--accent);
+      font-weight: 750;
+      text-decoration: none;
+    }
+    header {
+      min-height: 62vh;
+      display: grid;
+      align-items: center;
+      padding: 56px 0 42px;
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .96), rgba(255, 253, 248, .72)),
+        url("gumroad_cover_42.png");
+      background-size: cover;
+      background-position: center;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      max-width: 880px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 18px; }
+    .sub {
+      max-width: 720px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 750;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+    section {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .item {
+      border-top: 5px solid var(--accent-3);
+      padding-top: 16px;
+    }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    .checklist {
+      display: grid;
+      gap: 12px;
+      max-width: 860px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .checklist li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      color: var(--accent);
+      font-weight: 800;
+      line-height: 1;
+    }
+    .band { background: var(--band); }
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      header { min-height: auto; }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="./">Snapshot</a>
+      <a href="newsletter-landing-page-audit.html">Newsletter audit</a>
+      <a href="scorecard.html">Free scorecard</a>
+      <a href="creator-page-headline-generator.html">Headline generator</a>
+      <a href="creator-page-cta-generator.html">CTA generator</a>
+      <a href="sample_snapshot.html">Sample report</a>
+      <a href="creator-page-quick-fixes-checklist.html">Checklist</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <h1>Substack newsletter page audit</h1>
+      <p class="sub">For Substack writers whose publication page describes the topic, but does not yet make a stranger feel the promise, subscribe reason, paid path, and next click quickly enough.</p>
+      <div class="actions">
+        <a class="button" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 snapshot</a>
+        <a class="button secondary" href="creator-page-cta-generator.html">Use the free CTA generator</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap grid">
+        <div class="item">
+          <h2>Subscribe Promise</h2>
+          <p>The first screen should say who the publication is for, what recurring payoff the reader gets, and why this writer is worth inviting into the inbox.</p>
+        </div>
+        <div class="item">
+          <h2>Free To Paid Path</h2>
+          <p>The page should make the relationship between free posts, paid posts, archives, community, consulting, or products easy to understand before the reader subscribes.</p>
+        </div>
+        <div class="item">
+          <h2>CTA Confidence</h2>
+          <p>The subscribe button, support line, and proof nearby should reduce uncertainty about cadence, value, and what happens after the click.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Quick self-check before promoting a Substack page</h2>
+        <p>Use these checks before sending traffic from Notes, X, LinkedIn, podcast appearances, guest posts, or partner recommendations.</p>
+        <ul class="checklist">
+          <li><span class="mark">1</span><span>The headline names the specific reader and the repeatable outcome of subscribing.</span></li>
+          <li><span class="mark">2</span><span>The page explains what is free, what is paid, and why someone would upgrade later.</span></li>
+          <li><span class="mark">3</span><span>The CTA line says what the reader receives after subscribing, not only "Subscribe".</span></li>
+          <li><span class="mark">4</span><span>One proof point appears early: sample issue, reader quote, publication archive, creator credential, or concrete example.</span></li>
+          <li><span class="mark">5</span><span>The page gives one clear next step for cold readers instead of splitting attention across too many links.</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="band">
+      <div class="wrap">
+        <h2>What the snapshot returns</h2>
+        <p>The paid snapshot turns one public Substack publication page into a concise copy report: offer clarity score, headline rewrite, CTA fixes, 5 content hooks, 3 conversion copy suggestions, and the single next edit to make first.</p>
+        <p>It is a fit when the page already exists and needs sharper conversion copy. It is not a newsletter strategy package, growth campaign, sponsorship deck, analytics audit, or full publication rebuild.</p>
+        <div class="actions">
+          <a class="button" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 Substack page snapshot</a>
+          <a class="button secondary" href="sample_snapshot.html">View sample report</a>
+          <a class="button secondary" href="scorecard.html">Use the free scorecard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Creator Landing Page Snapshot by Ram Rahamim Massassa. Not affiliated with Substack.</div>
+  </footer>
+</body>
+</html>
