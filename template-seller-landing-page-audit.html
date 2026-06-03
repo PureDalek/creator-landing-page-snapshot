@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Template Seller Landing Page Audit</title>
+  <meta name="description" content="A focused template seller landing page audit for Notion, Canva, spreadsheet, PDF, and digital template creators who want clearer product positioning, proof, and checkout copy.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Template Seller Landing Page Audit">
+  <meta property="og:description" content="A practical audit for template product pages: buyer promise, preview proof, headline, CTA, use-case clarity, and next copy edits.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html">
+  <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover_42.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Template Seller Landing Page Audit",
+      "description": "A focused copy and conversion audit for template seller landing pages with an offer clarity score, headline rewrite, CTA fixes, content hooks, and conversion copy suggestions.",
+      "serviceType": "Template seller landing page audit",
+      "areaServed": "Worldwide",
+      "url": "https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "42",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.58;
+    }
+    .wrap {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    nav {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+    nav a {
+      color: var(--accent);
+      font-weight: 750;
+      text-decoration: none;
+    }
+    header {
+      min-height: 58vh;
+      display: grid;
+      align-items: center;
+      padding: 54px 0 38px;
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .96), rgba(255, 253, 248, .74)),
+        url("gumroad_cover_42.png");
+      background-size: cover;
+      background-position: center;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 18px; }
+    .sub {
+      max-width: 730px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 750;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+    section {
+      padding: 52px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .item {
+      border-top: 5px solid var(--accent-3);
+      padding-top: 16px;
+    }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    .checklist {
+      display: grid;
+      gap: 12px;
+      max-width: 900px;
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .checklist li {
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      color: var(--accent);
+      font-weight: 800;
+      line-height: 1;
+    }
+    .band { background: var(--band); }
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+      header { min-height: auto; }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="./">Snapshot</a>
+      <a href="scorecard.html">Scorecard</a>
+      <a href="creator-page-headline-generator.html">Headline generator</a>
+      <a href="gumroad-product-page-audit.html">Gumroad audit</a>
+      <a href="course-sales-page-audit.html">Course audit</a>
+      <a href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Buy snapshot</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <h1>Template seller landing page audit</h1>
+      <p class="sub">For Notion, Canva, spreadsheet, PDF, and digital template sellers whose product is useful, but whose page still asks buyers to imagine too much before checkout.</p>
+      <div class="actions">
+        <a class="button" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 snapshot</a>
+        <a class="button secondary" href="creator-page-headline-generator.html">Try the headline generator</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap grid">
+        <div class="item">
+          <h2>Use-Case Clarity</h2>
+          <p>The page should say the exact moment the template helps with, not only the file format or template category.</p>
+        </div>
+        <div class="item">
+          <h2>Preview Proof</h2>
+          <p>Template buyers need to see the structure, examples, screenshots, or before-and-after workflow before the price feels concrete.</p>
+        </div>
+        <div class="item">
+          <h2>Checkout Confidence</h2>
+          <p>Buyers need to know what is included, how they access it, what skill level it assumes, and what result they can reasonably expect.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Quick self-check before your next share</h2>
+        <p>Use these checks before putting your template link in a bio, newsletter, product launch, marketplace profile, or social post.</p>
+        <ul class="checklist">
+          <li><span class="mark">1</span><span>The headline names the buyer and the situation, not just the template name.</span></li>
+          <li><span class="mark">2</span><span>The first screen explains what changes after the buyer downloads or duplicates the template.</span></li>
+          <li><span class="mark">3</span><span>The page includes at least one concrete preview: screenshots, sample pages, included sections, or a short walkthrough.</span></li>
+          <li><span class="mark">4</span><span>The CTA says what happens next: download, duplicate, get access, open the workbook, or start the checklist.</span></li>
+          <li><span class="mark">5</span><span>The page answers access, compatibility, update, refund, and support expectations before checkout.</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="band">
+      <div class="wrap">
+        <h2>What the snapshot returns</h2>
+        <p>The paid snapshot turns one public template product page into a concise copy report: offer clarity score, headline rewrite, CTA fixes, 5 content hooks, 3 conversion copy suggestions, and the single next edit to make first.</p>
+        <p>It is a fit when the template already exists and needs sharper page copy. It is not a full product build, template redesign, marketplace SEO campaign, or guaranteed conversion lift.</p>
+        <div class="actions">
+          <a class="button" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 template page snapshot</a>
+          <a class="button secondary" href="sample_snapshot.html">View sample report</a>
+          <a class="button secondary" href="scorecard.html">Use the free scorecard</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Creator Landing Page Snapshot by Ram Rahamim Massassa. Checkout is handled through Gumroad.</div>
+  </footer>
+</body>
+</html>
