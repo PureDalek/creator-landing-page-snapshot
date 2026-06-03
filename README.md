@@ -10,6 +10,7 @@ Free generators:
 
 - Creator page headline generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html
 - Creator page CTA generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html
+- Creator page mini audit generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html
 
 Focused audit pages:
 

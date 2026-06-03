@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Page Mini Audit Generator</title>
+  <meta name="description" content="A free no-login mini audit generator for creator landing pages, Carrd pages, newsletter pages, Gumroad products, coaching pages, course pages, and template shops.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Creator Page Mini Audit Generator">
+  <meta property="og:description" content="Generate a quick clarity score, headline direction, CTA fix, proof fix, and next edit for one creator offer page.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html">
+  <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover_42.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Creator Page Mini Audit Generator",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "url": "https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+      --panel: #ffffff;
+      --cool: #245a9a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    nav {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+    nav a {
+      color: var(--accent);
+      font-weight: 750;
+      text-decoration: none;
+    }
+    header {
+      padding: 34px 0 22px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .96), rgba(255, 253, 248, .80)),
+        url("gumroad_cover_42.png");
+      background-size: cover;
+      background-position: center;
+    }
+    h1 {
+      max-width: 940px;
+      margin: 0;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 18px; }
+    .sub {
+      max-width: 780px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+    main { padding: 28px 0 0; }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: minmax(290px, .74fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .9);
+      padding: 20px;
+    }
+    .field {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    label {
+      font-weight: 760;
+      color: var(--ink);
+    }
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+    textarea {
+      min-height: 76px;
+      resize: vertical;
+    }
+    .checks {
+      display: grid;
+      gap: 8px;
+      margin: 10px 0 0;
+    }
+    .check {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      align-items: start;
+      font-weight: 650;
+    }
+    .check input {
+      min-height: auto;
+      width: 18px;
+      height: 18px;
+      margin-top: 4px;
+      accent-color: var(--accent);
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 760;
+      cursor: pointer;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+    .button.cool {
+      border-color: var(--cool);
+      background: var(--cool);
+    }
+    .outputs {
+      display: grid;
+      gap: 14px;
+    }
+    .output {
+      border-left: 5px solid var(--accent-3);
+      background: var(--panel);
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 0 rgba(25, 24, 22, .08);
+    }
+    .output:nth-child(3n + 2) { border-color: var(--accent); }
+    .output:nth-child(3n + 3) { border-color: var(--accent-2); }
+    .output strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .output p {
+      margin: 0;
+      font-size: 18px;
+    }
+    .score {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      color: var(--accent);
+      font-weight: 850;
+    }
+    .score span:first-child {
+      font-size: 44px;
+      line-height: 1;
+    }
+    .section-band {
+      margin-top: 34px;
+      padding: 48px 0;
+      border-top: 1px solid var(--line);
+      background: var(--band);
+    }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .item {
+      border-top: 5px solid var(--accent-3);
+      padding-top: 16px;
+    }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      .tool-grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="./">Snapshot</a>
+      <a href="scorecard.html">Scorecard</a>
+      <a href="creator-page-headline-generator.html">Headline generator</a>
+      <a href="creator-page-cta-generator.html">CTA generator</a>
+      <a href="carrd-landing-page-audit.html">Carrd audit</a>
+      <a href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Buy snapshot</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <h1>Creator page mini audit generator</h1>
+      <p class="sub">Generate a quick clarity score, headline direction, CTA fix, proof fix, and next edit for a creator landing page before buying the full $42 snapshot.</p>
+    </div>
+  </header>
+  <main>
+    <section class="wrap tool-grid" aria-label="Mini audit generator">
+      <form class="panel" id="generator">
+        <div class="field">
+          <label for="pageType">Page type</label>
+          <select id="pageType">
+            <option>Carrd or one-page site</option>
+            <option>Newsletter or Substack page</option>
+            <option>Gumroad product page</option>
+            <option>Course sales page</option>
+            <option>Coaching or consulting page</option>
+            <option>Template seller page</option>
+            <option>Creator homepage</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="audience">Exact audience</label>
+          <input id="audience" value="course creators launching a paid workshop" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="offer">Offer or page promise</label>
+          <input id="offer" value="a fixed-scope landing page copy review" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="headline">Current headline</label>
+          <textarea id="headline">Get more clarity for your creator business</textarea>
+        </div>
+        <div class="field">
+          <label for="cta">Current main CTA</label>
+          <input id="cta" value="Learn more" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="proof">Best proof point</label>
+          <input id="proof" value="a sample report and a clear 48-hour delivery target" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="hesitation">Biggest buyer hesitation</label>
+          <input id="hesitation" value="not knowing what happens after checkout" autocomplete="off">
+        </div>
+        <div class="field">
+          <label>What is already clear?</label>
+          <div class="checks">
+            <label class="check"><input type="checkbox" data-check checked><span>Audience is specific</span></label>
+            <label class="check"><input type="checkbox" data-check><span>Outcome is concrete</span></label>
+            <label class="check"><input type="checkbox" data-check><span>CTA says the action</span></label>
+            <label class="check"><input type="checkbox" data-check><span>Proof appears before the final ask</span></label>
+            <label class="check"><input type="checkbox" data-check><span>Next step is explained</span></label>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="button" type="submit">Generate mini audit</button>
+          <button class="button secondary" type="button" id="copy">Copy report</button>
+        </div>
+      </form>
+      <div class="outputs" id="outputs" aria-live="polite"></div>
+    </section>
+    <section class="section-band">
+      <div class="wrap split">
+        <div class="item">
+          <h2>Fast Preview</h2>
+          <p>Use the free mini audit to spot the likely copy problem before paying for outside review.</p>
+        </div>
+        <div class="item">
+          <h2>Fixed Scope</h2>
+          <p>The paid snapshot is for one public page: score, headline rewrite, CTA fixes, hooks, and conversion copy suggestions.</p>
+        </div>
+        <div class="item">
+          <h2>Ready Next Step</h2>
+          <p>If the free result shows multiple weak spots, buy the $42 snapshot and send the page URL after checkout.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Creator Landing Page Snapshot by Ram Rahamim Massassa. Browser-only tool; no account or upload required.</div>
+  </footer>
+  <script>
+    const form = document.getElementById("generator");
+    const outputs = document.getElementById("outputs");
+    const copy = document.getElementById("copy");
+
+    function clean(value, fallback) {
+      const trimmed = String(value || "").trim();
+      return trimmed || fallback;
+    }
+
+    function actionVerb(cta) {
+      const lower = cta.toLowerCase();
+      if (lower.includes("subscribe") || lower.includes("join")) return "Join";
+      if (lower.includes("book") || lower.includes("call")) return "Book";
+      if (lower.includes("buy") || lower.includes("purchase")) return "Buy";
+      if (lower.includes("download") || lower.includes("get")) return "Get";
+      return "Send";
+    }
+
+    function render() {
+      const pageType = clean(document.getElementById("pageType").value, "creator page");
+      const audience = clean(document.getElementById("audience").value, "creators");
+      const offer = clean(document.getElementById("offer").value, "a clearer offer");
+      const headline = clean(document.getElementById("headline").value, "A vague headline");
+      const cta = clean(document.getElementById("cta").value, "Learn more");
+      const proof = clean(document.getElementById("proof").value, "one concrete proof point");
+      const hesitation = clean(document.getElementById("hesitation").value, "unclear next step");
+      const checked = [...document.querySelectorAll("[data-check]")].filter(item => item.checked).length;
+      const score = Math.round((checked / 5) * 100);
+      const grade = score >= 80 ? "Strong" : score >= 60 ? "Promising" : score >= 40 ? "Patchy" : "Fuzzy";
+      const verb = actionVerb(cta);
+      const rewrittenHeadline = `For ${audience}, get ${offer} without guessing what to fix first.`;
+      const rewrittenCta = `${verb} the page snapshot`;
+      const supportLine = `One public ${pageType.toLowerCase()}. Fixed-scope copy review. No redesign, SEO campaign, or subscription.`;
+      const proofFix = `Move this proof near the first or second CTA: ${proof}.`;
+      const frictionFix = `Answer this hesitation before checkout or signup: ${hesitation}.`;
+      const nextEdit = checked <= 2
+        ? "Rewrite the first screen before changing layout or colors."
+        : checked <= 4
+          ? "Tighten the CTA block and move proof closer to the decision point."
+          : "Polish the support line and make the paid next step easier to trust.";
+
+      const cards = [
+        ["Mini audit score", `<span class="score"><span>${score}</span><span>/100 · ${grade}</span></span>`],
+        ["Current headline diagnosis", `Your current headline, "${headline}", should name the audience, outcome, and offer format faster.`],
+        ["Headline direction", rewrittenHeadline],
+        ["CTA rewrite", `${rewrittenCta}<br>${supportLine}`],
+        ["Proof fix", proofFix],
+        ["Friction fix", frictionFix],
+        ["Next edit", nextEdit],
+        ["When to buy the full snapshot", `Buy the $42 Creator Landing Page Snapshot if you want the headline, CTA, proof placement, hooks, and conversion copy written for this exact page.`]
+      ];
+
+      outputs.innerHTML = cards.map(([label, value]) => `<article class="output"><strong>${label}</strong><p>${value}</p></article>`).join("") +
+        `<div class="controls"><a class="button cool" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 snapshot</a><a class="button secondary" href="sample_snapshot.html">View sample report</a></div>`;
+    }
+
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      render();
+    });
+
+    copy.addEventListener("click", async () => {
+      const text = [...outputs.querySelectorAll(".output")].map(card => {
+        return `${card.querySelector("strong").textContent}: ${card.querySelector("p").innerText}`;
+      }).join("\n\n");
+      if (!text) return;
+      await navigator.clipboard.writeText(text);
+      copy.textContent = "Copied";
+      setTimeout(() => { copy.textContent = "Copy report"; }, 1400);
+    });
+
+    render();
+  </script>
+</body>
+</html>
