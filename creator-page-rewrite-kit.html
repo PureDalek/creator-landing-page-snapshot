@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Page Rewrite Kit</title>
+  <meta name="description" content="A $9 self-serve copy kit for rewriting creator offer pages with headline formulas, CTA templates, proof prompts, friction fixes, and a 30-minute edit workflow.">
+  <link rel="canonical" href="https://puredalek.gumroad.com/l/creator-page-rewrite-kit">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      min-height: 76vh;
+      display: grid;
+      align-items: center;
+      padding: 48px 0 38px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(110deg, rgba(255,253,248,.96), rgba(255,253,248,.78)),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='780' viewBox='0 0 1200 780'%3E%3Crect width='1200' height='780' fill='%23efe7d7'/%3E%3Cg fill='none' stroke='%23176b5c' stroke-width='4' opacity='.45'%3E%3Crect x='112' y='126' width='420' height='212'/%3E%3Crect x='666' y='108' width='360' height='170'/%3E%3Crect x='610' y='436' width='430' height='206'/%3E%3Cpath d='M160 186h320M160 238h250M160 290h180M712 168h262M712 218h202M660 500h316M660 552h248'/%3E%3C/g%3E%3Cg fill='%23a7432f' opacity='.7'%3E%3Ccircle cx='560' cy='250' r='16'/%3E%3Ccircle cx='1068' cy='552' r='16'/%3E%3C/g%3E%3Cg fill='%23efc84a' opacity='.85'%3E%3Crect x='182' y='392' width='260' height='42' rx='5'/%3E%3Crect x='702' y='326' width='210' height='38' rx='5'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: cover;
+      background-position: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, .72fr);
+      gap: 44px;
+      align-items: center;
+    }
+    h1 {
+      margin: 0;
+      max-width: 800px;
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 18px; }
+    .sub {
+      max-width: 660px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+    .price {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-top: 28px;
+      color: var(--accent);
+      font-weight: 800;
+    }
+    .price strong { font-size: 44px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      margin-top: 26px;
+      padding: 0 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 750;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      background: rgba(255,253,248,.9);
+    }
+    .panel ul {
+      margin: 14px 0 0;
+      padding-left: 20px;
+    }
+    section {
+      padding: 54px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .cols {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+    .item {
+      border-top: 5px solid var(--accent-3);
+      padding-top: 16px;
+    }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    .final { background: var(--band); }
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      header { min-height: auto; }
+      .grid,
+      .cols { grid-template-columns: 1fr; }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap grid">
+      <div>
+        <h1>Creator Page Rewrite Kit</h1>
+        <p class="sub">A self-serve copy kit for making a creator offer page clearer: headline formulas, CTA templates, proof prompts, friction fixes, and a 30-minute edit workflow.</p>
+        <div class="price"><strong>$9</strong><span>instant PDF download</span></div>
+        <a class="button" href="https://puredalek.gumroad.com/l/creator-page-rewrite-kit">Get the kit</a>
+      </div>
+      <aside class="panel">
+        <strong>Inside the PDF</strong>
+        <ul>
+          <li>5 headline formulas</li>
+          <li>10 CTA rewrites</li>
+          <li>First-screen copy blocks</li>
+          <li>Proof placement prompts</li>
+          <li>Friction-removal checklist</li>
+          <li>30-minute edit workflow</li>
+        </ul>
+      </aside>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap cols">
+        <div class="item">
+          <h2>Rewrite Faster</h2>
+          <p>Use fill-in-the-blank formulas instead of staring at a blank page.</p>
+        </div>
+        <div class="item">
+          <h2>Clarify The Offer</h2>
+          <p>Make the audience, outcome, CTA, and proof easier to understand in the first scroll.</p>
+        </div>
+        <div class="item">
+          <h2>Keep It Small</h2>
+          <p>Run one focused 30-minute edit before redesigning the whole page.</p>
+        </div>
+      </div>
+    </section>
+    <section class="final">
+      <div class="wrap">
+        <h2>Want A Custom Review?</h2>
+        <p>The $42 first-client launch price Creator Landing Page Snapshot reviews one public creator page and returns a clarity score, headline rewrite, CTA fixes, content hooks, and conversion copy suggestions.</p>
+        <a class="button" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the custom snapshot</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">This is a self-serve copy kit, not a full redesign, SEO campaign, analytics review, or guaranteed conversion lift.</div>
+  </footer>
+</body>
+</html>

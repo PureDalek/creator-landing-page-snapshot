@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyer Intake - Creator Landing Page Snapshot</title>
+  <meta name="description" content="Send the page URL and offer goal for a Creator Landing Page Snapshot order.">
+  <link rel="canonical" data-buyer-intake-canonical href="https://puredalek.gumroad.com/l/buyer_intake.html">
+  <meta property="og:title" content="Buyer Intake - Creator Landing Page Snapshot">
+  <meta property="og:description" content="Send the page URL, creator name, offer goal, and one concern for your snapshot report.">
+  <meta property="og:url" data-buyer-intake-url content="https://puredalek.gumroad.com/l/buyer_intake.html">
+  <style>
+    :root {
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(940px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 52px 0 36px;
+      background: var(--band);
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 16px; }
+    .sub {
+      max-width: 680px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+    section {
+      padding: 34px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, .72fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+      padding: 20px;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 10px;
+      border-radius: 6px;
+      background: var(--accent-3);
+      font-weight: 800;
+    }
+    textarea {
+      width: 100%;
+      min-height: 190px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 12px;
+      font: 15px/1.5 Consolas, "SFMono-Regular", monospace;
+      color: var(--ink);
+      background: #fffdfa;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 750;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    ol {
+      margin: 0;
+      padding-left: 22px;
+    }
+    li { margin-bottom: 10px; }
+    footer {
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Send Your Snapshot Details</h1>
+      <p class="sub">Use this page after purchase so the report can be prepared without extra back-and-forth.</p>
+      <p><span class="status">Ready to collect intake details</span></p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap grid">
+        <div>
+          <h2>What To Send</h2>
+          <textarea id="intake-text" readonly>Order ID:
+Page URL:
+Creator/business name:
+What the page is meant to sell, grow, or collect:
+Specific concern to check:
+Preferred report slug:</textarea>
+          <div class="actions">
+            <button class="button" type="button" data-copy="intake-text">Copy intake details</button>
+            <a class="button secondary" data-buyer-intake-mailto href="mailto:puredalek@gmail.com?subject=Creator%20Landing%20Page%20Snapshot%20Intake&amp;body=Order%20ID%3A%0APage%20URL%3A%0ACreator/business%20name%3A%0AWhat%20the%20page%20is%20meant%20to%20sell%2C%20grow%2C%20or%20collect%3A%0ASpecific%20concern%20to%20check%3A">Email intake details</a>
+          </div>
+        </div>
+        <aside class="panel">
+          <h2>Delivery Target</h2>
+          <p>The delivery target is 48 hours after the page URL and offer goal are available.</p>
+          <p>The report can be published as a private, unlisted report link after the paid order is fulfilled.</p>
+          <p>If the page cannot be accessed or a useful report cannot be prepared, the order should be refunded.</p>
+          <div class="actions">
+            <a class="button secondary" href="creator-landing-page-snapshot.html">Back to offer</a>
+            <a class="button secondary" href="sample_snapshot.html">View sample report</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Before Sending</h2>
+        <ol>
+          <li>Use the same email address used for purchase when possible.</li>
+          <li>Send a public page URL that can be opened without a private login.</li>
+          <li>Include one sentence about what the page is meant to sell, grow, or collect.</li>
+          <li>Add one concern only if there is a specific section you want checked first.</li>
+          <li>Use a short report slug if you want the delivery link to be easy to recognize.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">This page is for confirmed buyers. It does not accept payment or submit a form.</div>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-copy]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const target = document.getElementById(button.dataset.copy);
+        target.select();
+        try {
+          await navigator.clipboard.writeText(target.value);
+          button.textContent = "Copied";
+          setTimeout(() => button.textContent = "Copy intake details", 1200);
+        } catch (_error) {
+          document.execCommand("copy");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
