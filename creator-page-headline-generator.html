@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Page Headline Generator</title>
+  <meta name="description" content="A free no-login headline and CTA generator for creator landing pages, newsletter pages, course pages, coaching pages, template shops, and Gumroad products.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Creator Page Headline Generator">
+  <meta property="og:description" content="Generate clearer headline, subhead, CTA, and proof-copy options for one creator offer page.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html">
+  <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover_42.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Creator Page Headline Generator",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "url": "https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+      --panel: #ffffff;
+      --cool: #245a9a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    nav {
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      padding: 16px 0;
+    }
+    nav a {
+      color: var(--accent);
+      font-weight: 750;
+      text-decoration: none;
+    }
+    header {
+      padding: 34px 0 22px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .96), rgba(255, 253, 248, .80)),
+        url("gumroad_cover_42.png");
+      background-size: cover;
+      background-position: center;
+    }
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 18px; }
+    .sub {
+      max-width: 760px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 19px;
+    }
+    main { padding: 28px 0 0; }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, .72fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .88);
+      padding: 20px;
+    }
+    .field {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    label {
+      font-weight: 760;
+      color: var(--ink);
+    }
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+    textarea {
+      min-height: 86px;
+      resize: vertical;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 760;
+      cursor: pointer;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+    .button.cool {
+      border-color: var(--cool);
+      background: var(--cool);
+    }
+    .outputs {
+      display: grid;
+      gap: 14px;
+    }
+    .output {
+      border-left: 5px solid var(--accent-3);
+      background: var(--panel);
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 0 rgba(25, 24, 22, .08);
+    }
+    .output:nth-child(3n + 2) { border-color: var(--accent); }
+    .output:nth-child(3n + 3) { border-color: var(--accent-2); }
+    .output strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .output p {
+      margin: 0;
+      font-size: 18px;
+    }
+    .section-band {
+      margin-top: 34px;
+      padding: 48px 0;
+      border-top: 1px solid var(--line);
+      background: var(--band);
+    }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .item {
+      border-top: 5px solid var(--accent-3);
+      padding-top: 16px;
+    }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 860px) {
+      .tool-grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="./">Snapshot</a>
+      <a href="scorecard.html">Scorecard</a>
+      <a href="newsletter-landing-page-audit.html">Newsletter audit</a>
+      <a href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Buy snapshot</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <h1>Creator page headline generator</h1>
+      <p class="sub">Draft clearer first-screen copy for a newsletter, course, coaching offer, template shop, Gumroad product, or indie creator page.</p>
+    </div>
+  </header>
+  <main>
+    <section class="wrap tool-grid" aria-label="Headline generator">
+      <form class="panel" id="generator">
+        <div class="field">
+          <label for="audience">Audience</label>
+          <input id="audience" value="newsletter writers" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="offer">Offer</label>
+          <input id="offer" value="a paid newsletter growth checklist" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="outcome">Outcome</label>
+          <input id="outcome" value="turn more page visitors into subscribers" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="proof">Proof or mechanism</label>
+          <textarea id="proof">Based on a 10-minute page clarity scan with headline, CTA, proof, and signup-friction checks.</textarea>
+        </div>
+        <div class="field">
+          <label for="tone">Tone</label>
+          <select id="tone">
+            <option value="clear">Clear</option>
+            <option value="direct">Direct</option>
+            <option value="warm">Warm</option>
+            <option value="premium">Premium</option>
+          </select>
+        </div>
+        <div class="controls">
+          <button class="button" type="submit">Generate</button>
+          <button class="button secondary" type="button" id="reset">Reset</button>
+        </div>
+      </form>
+      <div>
+        <div class="panel">
+          <h2>Generated copy</h2>
+          <div class="outputs" id="outputs" aria-live="polite"></div>
+          <div class="controls">
+            <button class="button cool" type="button" id="copy">Copy all</button>
+            <a class="button secondary" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 snapshot</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-band">
+      <div class="wrap split">
+        <div class="item">
+          <h2>Use One Promise</h2>
+          <p>The strongest page usually leads with one audience, one outcome, and one immediate next step.</p>
+        </div>
+        <div class="item">
+          <h2>Add Proof Nearby</h2>
+          <p>A sample, result, testimonial, process, or clear mechanism makes the headline easier to believe.</p>
+        </div>
+        <div class="item">
+          <h2>Check The CTA</h2>
+          <p>The button should say what happens after the click, not just ask the visitor to do work.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Free local browser tool. Checkout for the custom snapshot is handled by Gumroad.</div>
+  </footer>
+  <script>
+    const defaults = {
+      audience: "newsletter writers",
+      offer: "a paid newsletter growth checklist",
+      outcome: "turn more page visitors into subscribers",
+      proof: "Based on a 10-minute page clarity scan with headline, CTA, proof, and signup-friction checks.",
+      tone: "clear"
+    };
+
+    const fields = {
+      audience: document.getElementById("audience"),
+      offer: document.getElementById("offer"),
+      outcome: document.getElementById("outcome"),
+      proof: document.getElementById("proof"),
+      tone: document.getElementById("tone")
+    };
+
+    const outputs = document.getElementById("outputs");
+    const copyButton = document.getElementById("copy");
+
+    function clean(value, fallback) {
+      const trimmed = String(value || "").trim().replace(/\s+/g, " ");
+      return trimmed || fallback;
+    }
+
+    function values() {
+      return {
+        audience: clean(fields.audience.value, defaults.audience),
+        offer: clean(fields.offer.value, defaults.offer),
+        outcome: clean(fields.outcome.value, defaults.outcome),
+        proof: clean(fields.proof.value, defaults.proof),
+        tone: fields.tone.value
+      };
+    }
+
+    function titleCase(text) {
+      return text.replace(/\b\w/g, (letter) => letter.toUpperCase());
+    }
+
+    function makeCopy(input) {
+      const audience = input.audience;
+      const offer = input.offer;
+      const outcome = input.outcome;
+      const proof = input.proof.replace(/[.?!]$/, "");
+      const toneMap = {
+        clear: {
+          lead: `For ${audience} who want to ${outcome}`,
+          cta: "Get the page snapshot",
+          qualifier: "without rewriting the whole page"
+        },
+        direct: {
+          lead: `${titleCase(audience)}: ${outcome}`,
+          cta: "Fix my page copy",
+          qualifier: "before sending more traffic"
+        },
+        warm: {
+          lead: `Help more of the right ${audience} say yes`,
+          cta: "Show me the clearer version",
+          qualifier: "with copy that feels easier to trust"
+        },
+        premium: {
+          lead: `Sharper page copy for ${audience}`,
+          cta: "Request the snapshot",
+          qualifier: "with one focused conversion review"
+        }
+      };
+      const tone = toneMap[input.tone] || toneMap.clear;
+      return [
+        ["Headline", tone.lead],
+        ["Headline", `Turn ${offer} into a clearer reason to act`],
+        ["Headline", `${titleCase(outcome)} with a clearer first screen`],
+        ["Subhead", `${proof}. Get the promise, CTA, proof, and friction copy into a tighter shape ${tone.qualifier}.`],
+        ["CTA", tone.cta],
+        ["CTA", `Get ${offer}`],
+        ["CTA", `See the next best edit`],
+        ["Proof line", `Built around ${proof.toLowerCase()}.`],
+        ["Friction line", `Send one public page URL and get a concise copy snapshot you can apply without a redesign.`]
+      ];
+    }
+
+    function render() {
+      outputs.innerHTML = "";
+      makeCopy(values()).forEach(([label, text]) => {
+        const block = document.createElement("div");
+        block.className = "output";
+        const strong = document.createElement("strong");
+        strong.textContent = label;
+        const paragraph = document.createElement("p");
+        paragraph.textContent = text;
+        block.append(strong, paragraph);
+        outputs.appendChild(block);
+      });
+    }
+
+    document.getElementById("generator").addEventListener("submit", (event) => {
+      event.preventDefault();
+      render();
+    });
+
+    document.getElementById("reset").addEventListener("click", () => {
+      Object.entries(defaults).forEach(([key, value]) => {
+        fields[key].value = value;
+      });
+      render();
+    });
+
+    copyButton.addEventListener("click", async () => {
+      const text = Array.from(outputs.querySelectorAll(".output"))
+        .map((block) => `${block.querySelector("strong").textContent}: ${block.querySelector("p").textContent}`)
+        .join("\n");
+      try {
+        await navigator.clipboard.writeText(text);
+        copyButton.textContent = "Copied";
+        setTimeout(() => { copyButton.textContent = "Copy all"; }, 1200);
+      } catch {
+        copyButton.textContent = "Select and copy";
+      }
+    });
+
+    Object.values(fields).forEach((field) => field.addEventListener("input", render));
+    render();
+  </script>
+</body>
+</html>
