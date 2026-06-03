@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Creator Page Headline Generator</title>
-  <meta name="description" content="A free no-login headline and CTA generator for creator landing pages, newsletter pages, course pages, coaching pages, template shops, and Gumroad products.">
-  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html">
+  <title>Creator Page CTA Generator</title>
+  <meta name="description" content="A free no-login CTA generator for creator landing pages, newsletter pages, coaching pages, course pages, template shops, and Gumroad product pages.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Creator Page Headline Generator">
-  <meta property="og:description" content="Generate clearer headline, subhead, CTA, and proof-copy options for one creator offer page.">
-  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html">
+  <meta property="og:title" content="Creator Page CTA Generator">
+  <meta property="og:description" content="Generate clearer call-to-action button copy, support lines, objection reducers, and next-step copy for one creator offer page.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html">
   <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover_42.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Creator Page Headline Generator",
+      "name": "Creator Page CTA Generator",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Any",
-      "url": "https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html",
+      "url": "https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -230,46 +230,46 @@
     <div class="wrap">
       <a href="./">Snapshot</a>
       <a href="scorecard.html">Scorecard</a>
-      <a href="creator-page-cta-generator.html">CTA generator</a>
-      <a href="newsletter-landing-page-audit.html">Newsletter audit</a>
-      <a href="course-sales-page-audit.html">Course audit</a>
+      <a href="creator-page-headline-generator.html">Headline generator</a>
+      <a href="coaching-landing-page-audit.html">Coaching audit</a>
       <a href="gumroad-product-page-audit.html">Gumroad audit</a>
       <a href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Buy snapshot</a>
     </div>
   </nav>
   <header>
     <div class="wrap">
-      <h1>Creator page headline generator</h1>
-      <p class="sub">Draft clearer first-screen copy for a newsletter, course, coaching offer, template shop, Gumroad product, or indie creator page.</p>
+      <h1>Creator page CTA generator</h1>
+      <p class="sub">Draft clearer button copy, CTA support lines, and friction reducers for a newsletter, course, coaching, template, Gumroad, or indie creator offer page.</p>
     </div>
   </header>
   <main>
-    <section class="wrap tool-grid" aria-label="Headline generator">
+    <section class="wrap tool-grid" aria-label="CTA generator">
       <form class="panel" id="generator">
         <div class="field">
           <label for="audience">Audience</label>
-          <input id="audience" value="newsletter writers" autocomplete="off">
+          <input id="audience" value="coaches with a public booking page" autocomplete="off">
         </div>
         <div class="field">
           <label for="offer">Offer</label>
-          <input id="offer" value="a paid newsletter growth checklist" autocomplete="off">
+          <input id="offer" value="a coaching page copy snapshot" autocomplete="off">
         </div>
         <div class="field">
-          <label for="outcome">Outcome</label>
-          <input id="outcome" value="turn more page visitors into subscribers" autocomplete="off">
-        </div>
-        <div class="field">
-          <label for="proof">Proof or mechanism</label>
-          <textarea id="proof">Based on a 10-minute page clarity scan with headline, CTA, proof, and signup-friction checks.</textarea>
-        </div>
-        <div class="field">
-          <label for="tone">Tone</label>
-          <select id="tone">
-            <option value="clear">Clear</option>
-            <option value="direct">Direct</option>
-            <option value="warm">Warm</option>
-            <option value="premium">Premium</option>
+          <label for="action">Next action</label>
+          <select id="action">
+            <option value="buy">Buy a product</option>
+            <option value="book">Book a call</option>
+            <option value="subscribe">Subscribe</option>
+            <option value="download">Download</option>
+            <option value="apply">Apply</option>
           </select>
+        </div>
+        <div class="field">
+          <label for="outcome">Buyer outcome</label>
+          <input id="outcome" value="make the page easier to trust and act on" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="friction">Main hesitation</label>
+          <textarea id="friction">The visitor is interested, but does not know what happens after clicking or whether the offer fits their stage.</textarea>
         </div>
         <div class="controls">
           <button class="button" type="submit">Generate</button>
@@ -278,7 +278,7 @@
       </form>
       <div>
         <div class="panel">
-          <h2>Generated copy</h2>
+          <h2>Generated CTA set</h2>
           <div class="outputs" id="outputs" aria-live="polite"></div>
           <div class="controls">
             <button class="button cool" type="button" id="copy">Copy all</button>
@@ -290,16 +290,16 @@
     <section class="section-band">
       <div class="wrap split">
         <div class="item">
-          <h2>Use One Promise</h2>
-          <p>The strongest page usually leads with one audience, one outcome, and one immediate next step.</p>
+          <h2>Name The Action</h2>
+          <p>The best CTA usually says what happens next: book, download, get access, apply, subscribe, or buy.</p>
         </div>
         <div class="item">
-          <h2>Add Proof Nearby</h2>
-          <p>A sample, result, testimonial, process, or clear mechanism makes the headline easier to believe.</p>
+          <h2>Reduce The Risk</h2>
+          <p>A support line below the button should answer timing, fit, delivery, access, or effort before doubt grows.</p>
         </div>
         <div class="item">
-          <h2>Check The CTA</h2>
-          <p>The button should say what happens after the click, not just ask the visitor to do work. Use the <a href="creator-page-cta-generator.html">CTA generator</a> when the headline is clear but the next step still feels vague.</p>
+          <h2>Keep One Primary CTA</h2>
+          <p>Use secondary links only after the visitor understands the main offer and the main decision.</p>
         </div>
       </div>
     </section>
@@ -309,19 +309,19 @@
   </footer>
   <script>
     const defaults = {
-      audience: "newsletter writers",
-      offer: "a paid newsletter growth checklist",
-      outcome: "turn more page visitors into subscribers",
-      proof: "Based on a 10-minute page clarity scan with headline, CTA, proof, and signup-friction checks.",
-      tone: "clear"
+      audience: "coaches with a public booking page",
+      offer: "a coaching page copy snapshot",
+      action: "buy",
+      outcome: "make the page easier to trust and act on",
+      friction: "The visitor is interested, but does not know what happens after clicking or whether the offer fits their stage."
     };
 
     const fields = {
       audience: document.getElementById("audience"),
       offer: document.getElementById("offer"),
+      action: document.getElementById("action"),
       outcome: document.getElementById("outcome"),
-      proof: document.getElementById("proof"),
-      tone: document.getElementById("tone")
+      friction: document.getElementById("friction")
     };
 
     const outputs = document.getElementById("outputs");
@@ -336,55 +336,53 @@
       return {
         audience: clean(fields.audience.value, defaults.audience),
         offer: clean(fields.offer.value, defaults.offer),
+        action: fields.action.value,
         outcome: clean(fields.outcome.value, defaults.outcome),
-        proof: clean(fields.proof.value, defaults.proof),
-        tone: fields.tone.value
+        friction: clean(fields.friction.value, defaults.friction)
       };
     }
 
-    function titleCase(text) {
-      return text.replace(/\b\w/g, (letter) => letter.toUpperCase());
-    }
+    const actionMap = {
+      buy: {
+        verbs: ["Get", "Buy", "Start"],
+        object: "the snapshot",
+        support: "Send one page URL and get a concise report you can apply without a redesign."
+      },
+      book: {
+        verbs: ["Book", "Schedule", "Check fit for"],
+        object: "the clarity call",
+        support: "Know what the call is for before you click: fit, page clarity, and the next best edit."
+      },
+      subscribe: {
+        verbs: ["Subscribe for", "Get", "Join"],
+        object: "the next issue",
+        support: "See what you will receive and why it matters before giving up your email."
+      },
+      download: {
+        verbs: ["Download", "Get", "Open"],
+        object: "the checklist",
+        support: "Use it immediately to check the first screen, CTA, proof, and buying friction."
+      },
+      apply: {
+        verbs: ["Apply for", "Request", "Check fit for"],
+        object: "the review",
+        support: "Answer a few fit questions so the next step is clear before anyone commits."
+      }
+    };
 
     function makeCopy(input) {
-      const audience = input.audience;
-      const offer = input.offer;
-      const outcome = input.outcome;
-      const proof = input.proof.replace(/[.?!]$/, "");
-      const toneMap = {
-        clear: {
-          lead: `For ${audience} who want to ${outcome}`,
-          cta: "Get the page snapshot",
-          qualifier: "without rewriting the whole page"
-        },
-        direct: {
-          lead: `${titleCase(audience)}: ${outcome}`,
-          cta: "Fix my page copy",
-          qualifier: "before sending more traffic"
-        },
-        warm: {
-          lead: `Help more of the right ${audience} say yes`,
-          cta: "Show me the clearer version",
-          qualifier: "with copy that feels easier to trust"
-        },
-        premium: {
-          lead: `Sharper page copy for ${audience}`,
-          cta: "Request the snapshot",
-          qualifier: "with one focused conversion review"
-        }
-      };
-      const tone = toneMap[input.tone] || toneMap.clear;
-      const proofPoint = proof.replace(/^based on\s+/i, "");
+      const config = actionMap[input.action] || actionMap.buy;
+      const hesitation = input.friction.replace(/[.?!]$/, "");
       return [
-        ["Headline", tone.lead],
-        ["Headline", `Turn ${offer} into a clearer reason to act`],
-        ["Headline", `${titleCase(outcome)} with a clearer first screen`],
-        ["Subhead", `${proof}. Get the promise, CTA, proof, and friction copy into a tighter shape ${tone.qualifier}.`],
-        ["CTA", tone.cta],
-        ["CTA", `Get ${offer}`],
-        ["CTA", `See the next best edit`],
-        ["Proof line", `Built around ${proofPoint.toLowerCase()}.`],
-        ["Friction line", `Send one public page URL and get a concise copy snapshot you can apply without a redesign.`]
+        ["Primary CTA", `${config.verbs[0]} ${config.object}`],
+        ["Primary CTA", `${config.verbs[1]} ${input.offer}`],
+        ["Primary CTA", `${config.verbs[2]} ${input.outcome}`],
+        ["Support line", config.support],
+        ["Support line", `Best for ${input.audience} who want to ${input.outcome}.`],
+        ["Objection reducer", `${hesitation}. This next step shows what happens, who it fits, and what to expect.`],
+        ["Microcopy", "No full redesign required. Start with the next best copy edit."],
+        ["Secondary CTA", "See sample report"],
+        ["Secondary CTA", "Use the free scorecard"]
       ];
     }
 
