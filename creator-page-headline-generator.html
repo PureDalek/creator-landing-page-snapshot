@@ -371,6 +371,7 @@
         }
       };
       const tone = toneMap[input.tone] || toneMap.clear;
+      const proofPoint = proof.replace(/^based on\s+/i, "");
       return [
         ["Headline", tone.lead],
         ["Headline", `Turn ${offer} into a clearer reason to act`],
@@ -379,7 +380,7 @@
         ["CTA", tone.cta],
         ["CTA", `Get ${offer}`],
         ["CTA", `See the next best edit`],
-        ["Proof line", `Built around ${proof.toLowerCase()}.`],
+        ["Proof line", `Built around ${proofPoint.toLowerCase()}.`],
         ["Friction line", `Send one public page URL and get a concise copy snapshot you can apply without a redesign.`]
       ];
     }
