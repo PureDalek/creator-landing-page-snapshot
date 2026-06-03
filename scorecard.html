@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Page Clarity Scorecard</title>
+  <meta name="description" content="A free 7-point creator page scorecard for checking headline clarity, CTA friction, proof, offer fit, and buying path before sending more traffic.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/scorecard.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Creator Page Clarity Scorecard">
+  <meta property="og:description" content="Score one creator page before sending more traffic, then choose the right next step.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/scorecard.html">
+  <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+      --panel: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    .wrap {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      min-height: 42vh;
+      display: grid;
+      align-items: end;
+      padding: 42px 0 34px;
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .94), rgba(255, 253, 248, .74)),
+        url("gumroad_cover.png");
+      background-size: cover;
+      background-position: center;
+      border-bottom: 1px solid var(--line);
+    }
+    nav {
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      background: var(--paper);
+    }
+    nav .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 750;
+    }
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      font-size: clamp(40px, 7vw, 76px);
+      line-height: .96;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 28px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+    p { margin: 0 0 16px; }
+    .sub {
+      max-width: 700px;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 20px;
+    }
+    main {
+      display: grid;
+      gap: 0;
+    }
+    section {
+      padding: 44px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .score-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+      gap: 28px;
+      align-items: start;
+    }
+    .checks {
+      display: grid;
+      gap: 12px;
+    }
+    .check {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      accent-color: var(--accent);
+    }
+    .check strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+    .check span {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .result {
+      position: sticky;
+      top: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 22px;
+    }
+    .score {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin: 10px 0 12px;
+      color: var(--accent);
+      font-weight: 850;
+    }
+    .score strong {
+      font-size: 56px;
+      line-height: 1;
+    }
+    .bar {
+      height: 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--band);
+      overflow: hidden;
+    }
+    .fill {
+      width: 0%;
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-2), var(--accent), var(--accent-3));
+      transition: width .2s ease;
+    }
+    .actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      text-align: center;
+    }
+    .button.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+    .button.tertiary {
+      border-color: var(--accent-2);
+      background: var(--accent-2);
+    }
+    .split {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .item {
+      padding-top: 16px;
+      border-top: 5px solid var(--accent-3);
+    }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 760px) {
+      .score-grid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+      .result {
+        position: static;
+      }
+      .sub {
+        font-size: 18px;
+      }
+      nav .wrap {
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="./">Creator Landing Page Snapshot</a>
+      <a href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Buy snapshot</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <h1>Creator Page Clarity Scorecard</h1>
+      <p class="sub">Score one public creator page before sending more traffic. The result points to the right next step: free checklist, rewrite kit, or custom snapshot.</p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap score-grid">
+        <div class="checks" id="checks">
+          <label class="check">
+            <input type="checkbox" data-score>
+            <span><strong>The first screen names the exact audience.</strong><span>A new visitor can tell who the page is for without scrolling.</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" data-score>
+            <span><strong>The headline promises a concrete outcome.</strong><span>It says what changes for the visitor, not only the broad topic.</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" data-score>
+            <span><strong>The main CTA explains what happens after the click.</strong><span>The button or nearby copy sets the next-step expectation.</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" data-score>
+            <span><strong>The offer format is obvious.</strong><span>The visitor can tell whether this is a service, template, course, newsletter, audit, or download.</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" data-score>
+            <span><strong>One proof point appears before the second CTA.</strong><span>A testimonial, result, credential, example, or sample appears near the buying decision.</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" data-score>
+            <span><strong>Buying friction is answered near the CTA.</strong><span>Timing, price, delivery, requirements, or refund scope is not hidden.</span></span>
+          </label>
+          <label class="check">
+            <input type="checkbox" data-score>
+            <span><strong>The page has one main next step.</strong><span>Secondary links do not compete with the primary conversion action.</span></span>
+          </label>
+        </div>
+        <aside class="result" aria-live="polite">
+          <h2>Your Score</h2>
+          <div class="score"><strong id="score">0</strong><span>/ 7</span></div>
+          <div class="bar" aria-hidden="true"><div class="fill" id="fill"></div></div>
+          <p id="verdict">Start with headline, audience, and CTA clarity before sending more traffic.</p>
+          <div class="actions">
+            <a class="button secondary" href="https://puredalek.gumroad.com/l/creator-page-quick-fixes-checklist">Free checklist</a>
+            <a class="button tertiary" href="https://puredalek.gumroad.com/l/creator-page-rewrite-kit">$9 rewrite kit</a>
+            <a class="button" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">$42 custom snapshot</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section>
+      <div class="wrap split">
+        <div class="item">
+          <h2>0-3</h2>
+          <p>Use the free checklist first. Fix the first screen, name the audience, and make the primary CTA obvious.</p>
+        </div>
+        <div class="item">
+          <h2>4-5</h2>
+          <p>Use the rewrite kit if you want prompts and examples for headline, CTA, proof, and friction copy.</p>
+        </div>
+        <div class="item">
+          <h2>6-7</h2>
+          <p>Use the custom snapshot if the page is close and an outside review would make the next edit clearer.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Creator Page Clarity Scorecard. Checkout is handled by Gumroad.</div>
+  </footer>
+  <script>
+    const boxes = Array.from(document.querySelectorAll("[data-score]"));
+    const score = document.getElementById("score");
+    const fill = document.getElementById("fill");
+    const verdict = document.getElementById("verdict");
+
+    function renderScore() {
+      const total = boxes.filter((box) => box.checked).length;
+      score.textContent = String(total);
+      fill.style.width = `${Math.round((total / boxes.length) * 100)}%`;
+      if (total <= 3) {
+        verdict.textContent = "Start with headline, audience, and CTA clarity before sending more traffic.";
+      } else if (total <= 5) {
+        verdict.textContent = "The page has a base. Tighten proof, friction, and CTA copy next.";
+      } else {
+        verdict.textContent = "The page is close. A focused outside snapshot can identify the highest-leverage edit.";
+      }
+    }
+
+    boxes.forEach((box) => box.addEventListener("change", renderScore));
+    renderScore();
+  </script>
+</body>
+</html>
