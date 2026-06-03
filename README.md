@@ -9,6 +9,7 @@ Free scorecard: https://puredalek.github.io/creator-landing-page-snapshot/scorec
 Focused audit pages:
 
 - Newsletter landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/newsletter-landing-page-audit.html
+- Coaching landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/coaching-landing-page-audit.html
 - Gumroad product page audit: https://puredalek.github.io/creator-landing-page-snapshot/gumroad-product-page-audit.html
 - Course sales page audit: https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-audit.html
 - Template seller landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html
