@@ -373,10 +373,18 @@
     function makeCopy(input) {
       const config = actionMap[input.action] || actionMap.buy;
       const hesitation = input.friction.replace(/[.?!]$/, "");
+      const gerundOutcome = input.outcome
+        .replace(/^make\s+/i, "making ")
+        .replace(/^turn\s+/i, "turning ")
+        .replace(/^get\s+/i, "getting ")
+        .replace(/^grow\s+/i, "growing ")
+        .replace(/^improve\s+/i, "improving ")
+        .replace(/^book\s+/i, "booking ")
+        .replace(/^sell\s+/i, "selling ");
       return [
         ["Primary CTA", `${config.verbs[0]} ${config.object}`],
         ["Primary CTA", `${config.verbs[1]} ${input.offer}`],
-        ["Primary CTA", `${config.verbs[2]} ${input.outcome}`],
+        ["Primary CTA", `Start ${gerundOutcome}`],
         ["Support line", config.support],
         ["Support line", `Best for ${input.audience} who want to ${input.outcome}.`],
         ["Objection reducer", `${hesitation}. This next step shows what happens, who it fits, and what to expect.`],
