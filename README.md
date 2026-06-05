@@ -48,6 +48,7 @@ Sample reports:
 
 Public article mirrors:
 
+- Start here: free creator page copy tools and templates: https://gist.github.com/PureDalek/0144aeb27d68756c390970a5ccbd2306
 - Digital product page quick fixes: https://gist.github.com/PureDalek/f07da5bc42b128a63c0d968cb10d877e
 - Notion template sales page quick fixes: https://gist.github.com/PureDalek/80201f27c6cb7cedf2d92b3c2373c988
 - Lead magnet page quick fixes: https://gist.github.com/PureDalek/b299772036fbfe66a03f25fe36fc3bc5
