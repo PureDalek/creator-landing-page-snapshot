@@ -31,6 +31,12 @@ Sample reports:
 - Course sales page sample snapshot: https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-sample-snapshot.html
 - Template product page sample snapshot: https://puredalek.github.io/creator-landing-page-snapshot/template-product-page-sample-snapshot.html
 
+Public article mirrors:
+
+- Digital product page quick fixes: https://gist.github.com/PureDalek/f07da5bc42b128a63c0d968cb10d877e
+- Notion template sales page quick fixes: https://gist.github.com/PureDalek/80201f27c6cb7cedf2d92b3c2373c988
+- Lead magnet page quick fixes: https://gist.github.com/PureDalek/b299772036fbfe66a03f25fe36fc3bc5
+
 Checkout: https://puredalek.gumroad.com/l/creator-landing-page-snapshot
 
 The snapshot is for newsletter writers, coaches, course sellers, template sellers, and indie creators who want a clearer offer page before sending more traffic.
