@@ -32,6 +32,7 @@ Focused audit pages:
 - Digital product landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/digital-product-landing-page-audit.html
 - Notion template sales page audit: https://puredalek.github.io/creator-landing-page-snapshot/notion-template-sales-page-audit.html
 - Lead magnet landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/lead-magnet-landing-page-audit.html
+- Creator homepage audit: https://puredalek.github.io/creator-landing-page-snapshot/creator-homepage-audit.html
 
 Copy templates:
 
