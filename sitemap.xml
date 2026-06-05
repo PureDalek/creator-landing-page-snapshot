@@ -2,97 +2,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://puredalek.github.io/creator-landing-page-snapshot/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-landing-page-snapshot.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/newsletter-landing-page-audit.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/substack-newsletter-page-audit.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/carrd-landing-page-audit.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/coaching-landing-page-audit.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/gumroad-product-page-audit.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-audit.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/scorecard.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.8</priority>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-rewrite-kit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-quick-fixes-checklist.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/scorecard.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-rewrite-kit.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://puredalek.github.io/creator-landing-page-snapshot/sample_snapshot.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/newsletter-landing-page-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/substack-newsletter-page-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/carrd-landing-page-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/coaching-landing-page-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/gumroad-product-page-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://puredalek.github.io/creator-landing-page-snapshot/creator-homepage-audit.html</loc>
+    <lastmod>2026-06-05</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-sample-snapshot.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.55</priority>
   </url>
   <url>
     <loc>https://puredalek.github.io/creator-landing-page-snapshot/template-product-page-sample-snapshot.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2026-06-05</lastmod>
+    <priority>0.55</priority>
   </url>
   <url>
     <loc>https://puredalek.github.io/creator-landing-page-snapshot/buyer_intake.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-05</lastmod>
     <priority>0.5</priority>
   </url>
 </urlset>
