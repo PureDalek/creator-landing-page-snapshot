@@ -4,6 +4,14 @@ Public offer site for a fixed-scope creator landing page copy snapshot.
 
 Live site: https://puredalek.github.io/creator-landing-page-snapshot/
 
+Resource hub: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-copy-resources.html
+
+Discovery files:
+
+- RSS feed: https://puredalek.github.io/creator-landing-page-snapshot/feed.xml
+- llms.txt: https://puredalek.github.io/creator-landing-page-snapshot/llms.txt
+- Sitemap: https://puredalek.github.io/creator-landing-page-snapshot/sitemap.xml
+
 Free scorecard: https://puredalek.github.io/creator-landing-page-snapshot/scorecard.html
 
 Free generators:

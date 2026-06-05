@@ -1,0 +1,51 @@
+# Creator Page Copy Resources
+
+> Free creator page copy tools, templates, focused audit pages, sample reports, and paid next steps for creator offer pages.
+
+The site helps newsletter writers, course sellers, Gumroad sellers, template sellers, coaches, and indie creators make offer pages clearer before sending more traffic.
+
+## Main Pages
+
+- Resource hub: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-copy-resources.html
+- Main offer: https://puredalek.github.io/creator-landing-page-snapshot/
+- Custom snapshot: https://puredalek.gumroad.com/l/creator-landing-page-snapshot
+- Self-serve rewrite kit: https://puredalek.gumroad.com/l/creator-page-rewrite-kit
+- Free checklist: https://puredalek.gumroad.com/l/creator-page-quick-fixes-checklist
+
+## Free Tools
+
+- Scorecard: https://puredalek.github.io/creator-landing-page-snapshot/scorecard.html
+- Headline generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html
+- CTA generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html
+- Mini audit generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html
+
+## Copy Templates
+
+- Gumroad product description template: https://puredalek.github.io/creator-landing-page-snapshot/gumroad-product-description-template.html
+- Digital product sales page copy template: https://puredalek.github.io/creator-landing-page-snapshot/digital-product-sales-page-copy-template.html
+- Notion template product page copy template: https://puredalek.github.io/creator-landing-page-snapshot/notion-template-product-page-copy-template.html
+- Lead magnet landing page copy template: https://puredalek.github.io/creator-landing-page-snapshot/lead-magnet-landing-page-copy-template.html
+
+## Focused Audit Pages
+
+- Newsletter landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/newsletter-landing-page-audit.html
+- Substack newsletter page audit: https://puredalek.github.io/creator-landing-page-snapshot/substack-newsletter-page-audit.html
+- Gumroad product page audit: https://puredalek.github.io/creator-landing-page-snapshot/gumroad-product-page-audit.html
+- Digital product landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/digital-product-landing-page-audit.html
+- Template seller landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html
+- Notion template sales page audit: https://puredalek.github.io/creator-landing-page-snapshot/notion-template-sales-page-audit.html
+- Lead magnet landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/lead-magnet-landing-page-audit.html
+- Course sales page audit: https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-audit.html
+- Coaching landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/coaching-landing-page-audit.html
+- Carrd landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/carrd-landing-page-audit.html
+- Creator homepage audit: https://puredalek.github.io/creator-landing-page-snapshot/creator-homepage-audit.html
+
+## Sample Reports
+
+- General sample snapshot: https://puredalek.github.io/creator-landing-page-snapshot/sample_snapshot.html
+- Course sales page sample: https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-sample-snapshot.html
+- Template product page sample: https://puredalek.github.io/creator-landing-page-snapshot/template-product-page-sample-snapshot.html
+
+## Scope Boundaries
+
+The paid snapshot is a fixed-scope copy and conversion review for one public page. It is not a full redesign, ad campaign, analytics audit, SEO campaign, custom implementation, legal advice, or guaranteed conversion lift.
