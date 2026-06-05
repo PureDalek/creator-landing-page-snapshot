@@ -18,6 +18,7 @@ The site helps newsletter writers, course sellers, Gumroad sellers, template sel
 - Headline generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-headline-generator.html
 - CTA generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-cta-generator.html
 - Mini audit generator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-mini-audit-generator.html
+- Revenue gap calculator: https://puredalek.github.io/creator-landing-page-snapshot/creator-page-revenue-calculator.html
 
 ## Copy Templates
 

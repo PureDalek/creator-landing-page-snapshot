@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Page Revenue Gap Calculator</title>
+  <meta name="description" content="A free browser calculator that estimates what one extra sale, subscriber, booking, or small conversion lift could be worth from a creator offer page.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-revenue-calculator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Creator Page Revenue Gap Calculator">
+  <meta property="og:description" content="Estimate the value of one extra sale or a small conversion lift before rewriting a creator offer page.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/creator-page-revenue-calculator.html">
+  <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover_42.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Creator Page Revenue Gap Calculator",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "url": "https://puredalek.github.io/creator-landing-page-snapshot/creator-page-revenue-calculator.html",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+      --panel: #ffffff;
+      --cool: #245a9a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    nav { border-bottom: 1px solid var(--line); background: var(--paper); }
+    nav .wrap { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; padding: 16px 0; }
+    nav a { color: var(--accent); font-weight: 750; text-decoration: none; }
+    header {
+      padding: 34px 0 22px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .96), rgba(255, 253, 248, .78)),
+        url("gumroad_cover_42.png");
+      background-size: cover;
+      background-position: center;
+    }
+    h1 {
+      max-width: 960px;
+      margin: 0;
+      font-size: clamp(38px, 7vw, 76px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h2 { margin: 0 0 14px; font-size: 28px; line-height: 1.15; letter-spacing: 0; }
+    h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.2; letter-spacing: 0; }
+    p { margin: 0 0 18px; }
+    .sub { max-width: 800px; margin-top: 18px; color: var(--muted); font-size: 19px; }
+    main { padding: 28px 0 0; }
+    .tool-grid {
+      display: grid;
+      grid-template-columns: minmax(290px, .72fr) minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .9);
+      padding: 20px;
+    }
+    .field { display: grid; gap: 8px; margin-bottom: 16px; }
+    label { font-weight: 760; color: var(--ink); }
+    input,
+    select {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+    .hint { color: var(--muted); font-size: 14px; }
+    .controls { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 760;
+      cursor: pointer;
+    }
+    .button.secondary { background: transparent; color: var(--accent); }
+    .button.cool { border-color: var(--cool); background: var(--cool); }
+    .outputs { display: grid; gap: 14px; }
+    .output {
+      border-left: 5px solid var(--accent-3);
+      background: var(--panel);
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 0 rgba(25, 24, 22, .08);
+    }
+    .output:nth-child(3n + 2) { border-color: var(--accent); }
+    .output:nth-child(3n + 3) { border-color: var(--accent-2); }
+    .output strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+    .output p { margin: 0; font-size: 18px; }
+    .metric {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      color: var(--accent);
+      font-weight: 850;
+    }
+    .metric span:first-child { font-size: 42px; line-height: 1; }
+    .section-band {
+      margin-top: 34px;
+      padding: 48px 0;
+      border-top: 1px solid var(--line);
+      background: var(--band);
+    }
+    .split { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .item { border-top: 5px solid var(--accent-3); padding-top: 16px; }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    footer { padding: 28px 0; color: var(--muted); font-size: 14px; }
+    @media (max-width: 860px) {
+      .tool-grid,
+      .split { grid-template-columns: 1fr; }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="./">Snapshot</a>
+      <a href="creator-page-copy-resources.html">Resource hub</a>
+      <a href="creator-page-mini-audit-generator.html">Mini audit</a>
+      <a href="creator-offer-page-template.html">Offer template</a>
+      <a href="https://puredalek.gumroad.com/l/creator-page-rewrite-kit">$9 rewrite kit</a>
+      <a href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Buy snapshot</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <h1>Creator page revenue gap calculator</h1>
+      <p class="sub">Estimate what one extra sale, subscriber, booking, or small conversion lift could be worth before spending more time sending traffic to the same creator offer page.</p>
+    </div>
+  </header>
+  <main>
+    <section class="wrap tool-grid" aria-label="Revenue gap calculator">
+      <form class="panel" id="calculator">
+        <div class="field">
+          <label for="pageType">Page type</label>
+          <select id="pageType">
+            <option>Digital product page</option>
+            <option>Newsletter subscribe page</option>
+            <option>Course sales page</option>
+            <option>Coaching booking page</option>
+            <option>Template seller page</option>
+            <option>Creator homepage</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="visitors">Monthly visitors</label>
+          <input id="visitors" type="number" min="0" step="1" value="500">
+          <span class="hint">Use a rough monthly number from analytics, Gumroad, newsletter stats, or your best estimate.</span>
+        </div>
+        <div class="field">
+          <label for="conversion">Current conversion rate (%)</label>
+          <input id="conversion" type="number" min="0" max="100" step="0.1" value="1.2">
+        </div>
+        <div class="field">
+          <label for="value">Value per conversion ($)</label>
+          <input id="value" type="number" min="0" step="1" value="42">
+          <span class="hint">For free signups, use your estimated subscriber value or leave the default as a planning proxy.</span>
+        </div>
+        <div class="field">
+          <label for="lift">Possible relative lift (%)</label>
+          <input id="lift" type="number" min="0" max="500" step="1" value="20">
+          <span class="hint">This is only a scenario, not a promise. Use a conservative number.</span>
+        </div>
+        <div class="field">
+          <label for="friction">Biggest suspected leak</label>
+          <select id="friction">
+            <option>Headline does not name the buyer</option>
+            <option>CTA is vague</option>
+            <option>Proof appears too late</option>
+            <option>Offer contents are unclear</option>
+            <option>Next step after checkout is unclear</option>
+            <option>Too many equal links</option>
+          </select>
+        </div>
+        <div class="controls">
+          <button class="button" type="submit">Calculate gap</button>
+          <button class="button secondary" type="button" id="copy">Copy summary</button>
+        </div>
+      </form>
+      <div>
+        <div class="panel">
+          <h2>Estimated gap</h2>
+          <p class="hint">These numbers are directional. They help decide whether a page rewrite is worth attention.</p>
+          <div class="outputs" id="outputs" aria-live="polite"></div>
+          <div class="controls">
+            <a class="button cool" href="https://puredalek.gumroad.com/l/creator-page-rewrite-kit">Buy the $9 rewrite kit</a>
+            <a class="button secondary" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 snapshot</a>
+            <a class="button secondary" href="creator-page-mini-audit-generator.html">Run mini audit</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-band">
+      <div class="wrap split">
+        <div class="item">
+          <h2>Small Lift, Real Money</h2>
+          <p>If the page already gets traffic, even one extra conversion can matter. The calculator shows the rough monthly and yearly value of that gap.</p>
+        </div>
+        <div class="item">
+          <h2>Fix The Highest Leak</h2>
+          <p>The next useful edit is usually headline clarity, CTA specificity, proof timing, offer contents, or post-click expectation.</p>
+        </div>
+        <div class="item">
+          <h2>Pick The Low-Touch Path</h2>
+          <p>Use the $9 kit for self-serve rewriting. Use the $42 snapshot when one public page needs a specific outside read.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Browser-only estimate. No tracking, login, upload, or guarantee. Checkout is handled by Gumroad.</div>
+  </footer>
+  <script>
+    const form = document.getElementById("calculator");
+    const outputs = document.getElementById("outputs");
+    const copyButton = document.getElementById("copy");
+
+    function number(id, fallback) {
+      const value = Number(document.getElementById(id).value);
+      return Number.isFinite(value) && value >= 0 ? value : fallback;
+    }
+
+    function money(value) {
+      return value.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
+    }
+
+    function decimals(value) {
+      return value.toLocaleString("en-US", { maximumFractionDigits: 2 });
+    }
+
+    function leakAdvice(leak) {
+      const advice = {
+        "Headline does not name the buyer": "Rewrite the first screen so it names the buyer, the job they want done, and the offer format.",
+        "CTA is vague": "Replace vague CTA copy with the real action: buy, book, subscribe, download, apply, or get the audit.",
+        "Proof appears too late": "Move a sample, screenshot, testimonial, credential, or before/after closer to the first decision point.",
+        "Offer contents are unclear": "List the exact deliverables, file format, length, examples, support, and first step after purchase.",
+        "Next step after checkout is unclear": "Add a plain post-click line that explains what happens after checkout, signup, booking, or download.",
+        "Too many equal links": "Make one primary path visually dominant and demote secondary links until after the main offer is understood."
+      };
+      return advice[leak] || advice["CTA is vague"];
+    }
+
+    function render() {
+      const pageType = document.getElementById("pageType").value;
+      const visitors = number("visitors", 500);
+      const conversion = number("conversion", 1.2) / 100;
+      const value = number("value", 42);
+      const lift = number("lift", 20) / 100;
+      const leak = document.getElementById("friction").value;
+      const currentConversions = visitors * conversion;
+      const currentRevenue = currentConversions * value;
+      const liftedConversions = currentConversions * (1 + lift);
+      const extraConversions = Math.max(0, liftedConversions - currentConversions);
+      const extraMonthly = extraConversions * value;
+      const oneExtraWeekly = value * 4.33;
+      const yearlyGap = extraMonthly * 12;
+      const kitBreakeven = value > 0 ? Math.max(1, Math.ceil(9 / value)) : 1;
+      const snapshotBreakeven = value > 0 ? Math.max(1, Math.ceil(42 / value)) : 1;
+
+      const cards = [
+        ["Current estimate", `<span class="metric"><span>${decimals(currentConversions)}</span><span>conversions/month</span></span><br>${money(currentRevenue)} at ${money(value)} each.`],
+        ["Scenario lift", `<span class="metric"><span>${decimals(extraConversions)}</span><span>extra/month</span></span><br>${money(extraMonthly)} extra/month or ${money(yearlyGap)} extra/year.`],
+        ["One extra conversion each week", `${money(oneExtraWeekly)} per month at your current value per conversion.`],
+        ["Break-even check", `The $9 rewrite kit needs about ${kitBreakeven} extra conversion(s). The $42 snapshot needs about ${snapshotBreakeven} extra conversion(s).`],
+        ["Likely next edit", `${pageType}: ${leakAdvice(leak)}`],
+        ["Best next path", extraMonthly >= 42 ? "The custom snapshot is plausible if you want an outside review of the exact page." : "Start with the $9 rewrite kit or the free mini audit before buying custom review."]
+      ];
+
+      outputs.innerHTML = cards.map(([label, value]) => `<article class="output"><strong>${label}</strong><p>${value}</p></article>`).join("");
+    }
+
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      render();
+    });
+
+    [...form.elements].forEach(element => {
+      if (element.tagName === "INPUT" || element.tagName === "SELECT") {
+        element.addEventListener("input", render);
+      }
+    });
+
+    copyButton.addEventListener("click", async () => {
+      const text = [...outputs.querySelectorAll(".output")].map(card => `${card.querySelector("strong").textContent}: ${card.querySelector("p").innerText}`).join("\n\n");
+      if (!text) return;
+      try {
+        await navigator.clipboard.writeText(text);
+        copyButton.textContent = "Copied";
+        setTimeout(() => { copyButton.textContent = "Copy summary"; }, 1200);
+      } catch {
+        copyButton.textContent = "Select and copy";
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>
