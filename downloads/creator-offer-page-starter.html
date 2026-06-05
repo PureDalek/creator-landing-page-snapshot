@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Creator Offer</title>
+  <meta name="description" content="A one-page creator offer page starter template. Replace the bracketed copy with your offer details.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    .wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      min-height: 74vh;
+      display: grid;
+      align-items: center;
+      padding: 56px 0 42px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .97), rgba(255, 253, 248, .78)),
+        radial-gradient(circle at 80% 18%, rgba(239, 200, 74, .38), transparent 28%),
+        radial-gradient(circle at 12% 80%, rgba(23, 107, 92, .20), transparent 30%);
+    }
+    h1 {
+      max-width: 880px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: .96;
+      letter-spacing: 0;
+    }
+    h2 { margin: 0 0 16px; font-size: 30px; line-height: 1.15; letter-spacing: 0; }
+    h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.2; letter-spacing: 0; }
+    p { margin: 0 0 18px; }
+    .sub { max-width: 740px; margin-top: 22px; color: var(--muted); font-size: 20px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 750;
+    }
+    .button.secondary { background: transparent; color: var(--accent); }
+    section { padding: 52px 0; border-bottom: 1px solid var(--line); }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+    .item { border-top: 5px solid var(--accent-3); padding-top: 16px; }
+    .item:nth-child(2) { border-color: var(--accent); }
+    .item:nth-child(3) { border-color: var(--accent-2); }
+    .proof {
+      display: grid;
+      grid-template-columns: minmax(0, .86fr) minmax(260px, .5fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .quote {
+      border-left: 5px solid var(--accent);
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 1px 0 rgba(25, 24, 22, .08);
+    }
+    .fit {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .fit ul { margin: 0; padding-left: 20px; }
+    .band { background: var(--band); }
+    footer { padding: 28px 0; color: var(--muted); font-size: 14px; }
+    @media (max-width: 800px) {
+      header { min-height: auto; }
+      .grid,
+      .proof,
+      .fit { grid-template-columns: 1fr; }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>[Offer name] for [specific buyer]</h1>
+      <p class="sub">[One sentence that says what the buyer gets, what it helps them do, and what common friction it removes.]</p>
+      <div class="actions">
+        <a class="button" href="[primary checkout or signup URL]">[Primary CTA]</a>
+        <a class="button secondary" href="[sample, demo, or proof URL]">See sample</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap grid">
+        <div class="item">
+          <h2>Who It Is For</h2>
+          <p>[Name the exact type of person or business this page serves. Avoid broad labels if you can be specific.]</p>
+        </div>
+        <div class="item">
+          <h2>What They Get</h2>
+          <p>[Name the deliverables, file format, service scope, examples, access, or first step after purchase.]</p>
+        </div>
+        <div class="item">
+          <h2>Why Now</h2>
+          <p>[Name the moment that makes this useful now: before launch, before traffic, before outreach, before a call, or before checkout.]</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap proof">
+        <div>
+          <h2>What This Helps You Do</h2>
+          <p>[Explain the practical result in plain language. Keep this tied to the buyer's next action rather than a vague transformation.]</p>
+          <p>[Add a short workflow: Step 1, Step 2, Step 3. Make the offer feel easy to start.]</p>
+        </div>
+        <aside class="quote">
+          <h3>Proof Or Preview</h3>
+          <p>[Add a sample, screenshot, testimonial, before/after, credential, public example, or small result.]</p>
+        </aside>
+      </div>
+    </section>
+    <section class="band">
+      <div class="wrap fit">
+        <div>
+          <h2>Good Fit</h2>
+          <ul>
+            <li>[Buyer has this starting point]</li>
+            <li>[Buyer wants this outcome]</li>
+            <li>[Buyer can use this format]</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Not A Fit</h2>
+          <ul>
+            <li>[Excluded scope]</li>
+            <li>[Unpromised result]</li>
+            <li>[Wrong timing or wrong buyer]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="wrap">
+        <h2>Ready To [Outcome]?</h2>
+        <p>[Repeat the main promise and explain exactly what happens after the click.]</p>
+        <div class="actions">
+          <a class="button" href="[primary checkout or signup URL]">[Primary CTA]</a>
+          <a class="button secondary" href="[question or contact URL]">Ask a question</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">[Brand or creator name]. Replace this footer with your own business details and policies.</div>
+  </footer>
+</body>
+</html>
