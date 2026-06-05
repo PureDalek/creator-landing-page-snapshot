@@ -21,6 +21,9 @@ Focused audit pages:
 - Gumroad product page audit: https://puredalek.github.io/creator-landing-page-snapshot/gumroad-product-page-audit.html
 - Course sales page audit: https://puredalek.github.io/creator-landing-page-snapshot/course-sales-page-audit.html
 - Template seller landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/template-seller-landing-page-audit.html
+- Digital product landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/digital-product-landing-page-audit.html
+- Notion template sales page audit: https://puredalek.github.io/creator-landing-page-snapshot/notion-template-sales-page-audit.html
+- Lead magnet landing page audit: https://puredalek.github.io/creator-landing-page-snapshot/lead-magnet-landing-page-audit.html
 
 Sample reports:
 
