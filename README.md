@@ -40,6 +40,7 @@ Copy templates:
 - Digital product sales page copy template: https://puredalek.github.io/creator-landing-page-snapshot/digital-product-sales-page-copy-template.html
 - Notion template product page copy template: https://puredalek.github.io/creator-landing-page-snapshot/notion-template-product-page-copy-template.html
 - Lead magnet landing page copy template: https://puredalek.github.io/creator-landing-page-snapshot/lead-magnet-landing-page-copy-template.html
+- Creator offer page template: https://puredalek.github.io/creator-landing-page-snapshot/creator-offer-page-template.html
 
 Sample reports:
 

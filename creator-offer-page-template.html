@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Creator Offer Page Template</title>
+  <meta name="description" content="A free one-page creator offer page template for newsletters, courses, coaching, templates, downloads, and creator services.">
+  <link rel="canonical" href="https://puredalek.github.io/creator-landing-page-snapshot/creator-offer-page-template.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Creator Offer Page Template">
+  <meta property="og:description" content="Copy a practical one-page structure for a creator offer, then use the rewrite kit or snapshot if the page needs sharper copy.">
+  <meta property="og:url" content="https://puredalek.github.io/creator-landing-page-snapshot/creator-offer-page-template.html">
+  <meta property="og:image" content="https://puredalek.github.io/creator-landing-page-snapshot/gumroad_cover_42.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Creator Offer Page Template",
+      "description": "A free one-page creator offer page template for newsletters, courses, coaching, templates, downloads, and creator services.",
+      "url": "https://puredalek.github.io/creator-landing-page-snapshot/creator-offer-page-template.html",
+      "about": ["landing page copy", "creator economy", "offer page", "copywriting"],
+      "isAccessibleForFree": true
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #191816;
+      --muted: #5d5a54;
+      --line: #d9d3c8;
+      --paper: #fffdf8;
+      --band: #f2ece1;
+      --accent: #176b5c;
+      --accent-2: #a7432f;
+      --accent-3: #efc84a;
+      --panel: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.58;
+    }
+    .wrap { width: min(1080px, calc(100% - 32px)); margin: 0 auto; }
+    nav { border-bottom: 1px solid var(--line); background: var(--paper); }
+    nav .wrap { display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; padding: 16px 0; }
+    nav a { color: var(--accent); font-weight: 750; text-decoration: none; }
+    header {
+      min-height: 58vh;
+      display: grid;
+      align-items: center;
+      padding: 54px 0 38px;
+      background:
+        linear-gradient(110deg, rgba(255, 253, 248, .96), rgba(255, 253, 248, .72)),
+        url("gumroad_cover_42.png");
+      background-size: cover;
+      background-position: center;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: .95;
+      letter-spacing: 0;
+    }
+    h2 { margin: 0 0 16px; font-size: 30px; line-height: 1.15; letter-spacing: 0; }
+    h3 { margin: 0 0 8px; font-size: 20px; line-height: 1.2; letter-spacing: 0; }
+    p { margin: 0 0 18px; }
+    .sub { max-width: 760px; margin-top: 24px; color: var(--muted); font-size: 20px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 750;
+    }
+    .button.secondary { background: transparent; color: var(--accent); }
+    section { padding: 52px 0; border-bottom: 1px solid var(--line); }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+    .item {
+      border-left: 5px solid var(--accent-3);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 18px;
+      box-shadow: 0 1px 0 rgba(25, 24, 22, .08);
+    }
+    .item:nth-child(3n + 2) { border-color: var(--accent); }
+    .item:nth-child(3n + 3) { border-color: var(--accent-2); }
+    .item p { color: var(--muted); }
+    code,
+    pre {
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    }
+    pre {
+      overflow: auto;
+      margin: 14px 0 0;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #24221f;
+      color: #fff8e8;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+    .template {
+      display: grid;
+      gap: 18px;
+    }
+    .block {
+      border-top: 5px solid var(--accent);
+      background: var(--panel);
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .block:nth-child(2n) { border-color: var(--accent-2); }
+    .band { background: var(--band); }
+    footer { padding: 28px 0; color: var(--muted); font-size: 14px; }
+    @media (max-width: 820px) {
+      .grid { grid-template-columns: 1fr; }
+      header { min-height: auto; }
+      .sub { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <a href="./">Snapshot</a>
+      <a href="creator-page-copy-resources.html">Resource hub</a>
+      <a href="creator-page-rewrite-kit.html">$9 rewrite kit</a>
+      <a href="creator-page-mini-audit-generator.html">Mini audit</a>
+      <a href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Buy snapshot</a>
+    </div>
+  </nav>
+  <header>
+    <div class="wrap">
+      <h1>Creator offer page template</h1>
+      <p class="sub">A free one-page structure for selling a newsletter, course, coaching offer, template, download, service, or small digital product without making visitors guess what to do next.</p>
+      <div class="actions">
+        <a class="button" href="#template">Use the template</a>
+        <a class="button secondary" href="https://puredalek.gumroad.com/l/creator-page-rewrite-kit">Buy the $9 rewrite kit</a>
+        <a class="button secondary" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 snapshot</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="wrap grid">
+        <div class="item">
+          <h2>One Primary Job</h2>
+          <p>The page should make one action obvious: subscribe, buy, book, download, start, or request help.</p>
+        </div>
+        <div class="item">
+          <h2>Enough Proof</h2>
+          <p>Small creator offers can use lightweight proof: samples, screenshots, before-and-after copy, examples, credentials, or use cases.</p>
+        </div>
+        <div class="item">
+          <h2>Plain Fit Notes</h2>
+          <p>Buyer-fit and not-a-fit copy reduces support friction and keeps expectations clear before checkout.</p>
+        </div>
+      </div>
+    </section>
+    <section id="template">
+      <div class="wrap">
+        <h2>Copy-and-adapt page structure</h2>
+        <div class="template">
+          <div class="block">
+            <h3>Hero</h3>
+            <p>Say who it is for, what it helps them do, and what happens after the click.</p>
+            <pre>For [specific creator/customer] who want to [desired outcome],
+[offer name] helps you [practical job] without [common friction].
+
+[Primary CTA: Get the template / Book the audit / Join the newsletter]
+[Secondary CTA: See sample / Use free scorecard]</pre>
+          </div>
+          <div class="block">
+            <h3>Problem</h3>
+            <p>Name the moment that makes the buyer want help now.</p>
+            <pre>You already have [asset/page/offer], but visitors still ask:
+- What exactly is this?
+- Is it for me?
+- What do I get?
+- What should I click first?</pre>
+          </div>
+          <div class="block">
+            <h3>What They Get</h3>
+            <p>List concrete contents, deliverables, or outcomes. Avoid vague value words alone.</p>
+            <pre>Inside:
+- [Deliverable 1]
+- [Deliverable 2]
+- [Deliverable 3]
+- [Example, template, checklist, call, report, or file format]
+- [First step after purchase]</pre>
+          </div>
+          <div class="block">
+            <h3>Proof</h3>
+            <p>Use whatever proof is honest and specific. A preview can be proof.</p>
+            <pre>Proof options:
+- Screenshot of the product
+- Short sample
+- Before/after copy
+- Creator credential
+- Use-case example
+- Public report or demo
+- Tiny testimonial</pre>
+          </div>
+          <div class="block">
+            <h3>Fit / Not Fit</h3>
+            <p>This section prevents wrong buyers and gives right buyers confidence.</p>
+            <pre>Good fit if:
+- You have [starting point]
+- You want [specific outcome]
+- You can use [format]
+
+Not a fit if:
+- You need [excluded scope]
+- You expect [unpromised result]
+- You need [custom work not included]</pre>
+          </div>
+          <div class="block">
+            <h3>Final CTA</h3>
+            <p>Repeat the next action with a plain expectation.</p>
+            <pre>Ready to [outcome]?
+
+[Primary CTA]
+
+After checkout, you will [receive/download/submit/book] [specific next step].</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="band">
+      <div class="wrap">
+        <h2>Use the smallest next step</h2>
+        <p>Use this page if you only need structure. Use the $9 rewrite kit if you want prompts and examples for headline, CTA, proof, and friction copy. Use the $42 snapshot if you want one public page reviewed with a clarity score and specific edits.</p>
+        <div class="actions">
+          <a class="button" href="https://puredalek.gumroad.com/l/creator-page-rewrite-kit">Buy the $9 rewrite kit</a>
+          <a class="button secondary" href="creator-page-mini-audit-generator.html">Try the free mini audit</a>
+          <a class="button secondary" href="https://puredalek.gumroad.com/l/creator-landing-page-snapshot">Get the $42 snapshot</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Creator Offer Page Template. Checkout links are handled through Gumroad. This page is not affiliated with any marketplace or platform.</div>
+  </footer>
+</body>
+</html>
